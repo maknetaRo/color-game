@@ -1,0 +1,9 @@
+.navbar {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-color: black;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  text-align: center;
+}

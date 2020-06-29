@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import "./Main.css";
+import Game from "../Game/Game";
+import ReloadButton from "../ReloadButton/ReloadButton";
+import Navbar from "../Navbar/Navbar";
 
-class Main extends Component {
-  render() {
-    return (
-      <main className="main">
-        <section class="hexCode" id="hexCode"></section>
-        <section class="first" id="first"></section>
-        <section class="second" id="second"></section>
-      </main>
-    );
-  }
+function Main() {
+  return (
+    <div className="main-app">
+      <Navbar />
+      <Game />
+      <ReloadButton />
+    </div>
+  );
 }
 
 export default Main;
