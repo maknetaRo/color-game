@@ -1,5 +1,6 @@
 import React, { Component, createContext } from "react";
 import "./Game.css";
+import ColorDisplay from '../ColorDisplay/ColorDisplay';
 
 class Game extends Component {
   constructor() {
@@ -19,14 +20,12 @@ class Game extends Component {
     if (correctColor === 1) {
       return (
         <main className="main">
-          <section class="hexCode" id="hexCode">
-            <h2 className="main-text">Click the matching color square</h2>
-            <h3 className="hex-color">{this.state.correctRandomHex}</h3>
-          </section>
+          <ColorDisplay data={this.state.correctRandomHex} />
+
           <section className="row">
+
             <div
-              class="first"
-              id="first"
+              className="first"
               style={{ background: this.state.correctRandomHex }}
               onClick={() => {
                 alert("Well done!");
@@ -34,8 +33,7 @@ class Game extends Component {
             ></div>
 
             <div
-              class="second"
-              id="second"
+              className="second"
               style={{ background: this.state.incorrectRandomHex }}
               onClick={() => {
                 alert("Wrong!.");
@@ -47,22 +45,17 @@ class Game extends Component {
     } else if (correctColor === 0) {
       return (
         <main className="main">
-          <section class="hexCode" id="hexCode">
-            <h2 className="main-text">Click the matching color square</h2>
-            <h3 className="hex-color">{this.state.correctRandomHex}</h3>
-          </section>
+          <ColorDisplay data={this.state.correctRandomHex} />
           <section className="row">
             <div
-              class="first"
-              id="first"
+              className="first"
               style={{ background: this.state.incorrectRandomHex }}
               onClick={() => {
                 alert("Wrong");
               }}
             ></div>
             <div
-              class="second"
-              id="second"
+              className="second"
               style={{ background: this.state.correctRandomHex }}
               onClick={() => {
                 alert("Well done");

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Main.css";
 import Game from "../Game/Game";
 import ReloadButton from "../ReloadButton/ReloadButton";
