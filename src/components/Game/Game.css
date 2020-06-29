@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 760px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.first,
+.second {
+  height: 200px;
+  width: 200px;
+  border: thin black solid;
+  margin: 20px;
+}
